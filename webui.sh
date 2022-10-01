@@ -41,11 +41,6 @@ then
     venv_dir="venv"
 fi
 
-if [[ -z "${LAUNCH_SCRIPT}" ]]
-then
-    LAUNCH_SCRIPT="launch.py"
-fi
-
 # Disable sentry logging
 export ERROR_REPORTING=FALSE
 
@@ -138,4 +133,4 @@ fi
 printf "\n%s\n" "${delimiter}"
 printf "Launching launch.py..."
 printf "\n%s\n" "${delimiter}"
-"${python_cmd}" "${LAUNCH_SCRIPT}"
+"${python_cmd}" launch.py

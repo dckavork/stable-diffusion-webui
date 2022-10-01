@@ -3,64 +3,50 @@ A browser interface based on Gradio library for Stable Diffusion.
 
 ![](txt2img_Screenshot.png)
 
-Check the [custom scripts](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Scripts) wiki page for extra scripts developed by users.
-
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
 - Original txt2img and img2img modes
 - One click install and run script (but you still must install python and git)
 - Outpainting
 - Inpainting
-- Prompt
+- Prompt matrix
 - Stable Diffusion upscale
-- Attention, specify parts of text that the model should pay more attention to
-    - a man in a ((txuedo)) - will pay more attentinoto tuxedo
-    - a man in a (txuedo:1.21) - alternative syntax
-- Loopback, run img2img procvessing multiple times
-- X/Y plot, a way to draw a 2 dimensional plot of images with different parameters
+- Attention
+- Loopback
+- X/Y plot
 - Textual Inversion
-    - have as many embeddings as you want and use any names you like for them
-    - use multiple embeddings with different numbers of vectors per token
-    - works with half precision floating point numbers
 - Extras tab with:
     - GFPGAN, neural network that fixes faces
     - CodeFormer, face restoration tool as an alternative to GFPGAN
     - RealESRGAN, neural network upscaler
-    - ESRGAN, neural network upscaler with a lot of third party models
+    - ESRGAN, neural network with a lot of third party models
     - SwinIR, neural network upscaler
     - LDSR, Latent diffusion super resolution upscaling
 - Resizing aspect ratio options
 - Sampling method selection
 - Interrupt processing at any time
-- 4GB video card support (also reports of 2GB working)
-- Correct seeds for batches 
+- 4GB video card support
+- Correct seeds for batches
 - Prompt length validation
-     - get length of prompt in tokensas you type
-     - get a warning after geenration if some text was truncated
-- Generation parameters
-     - parameters you used to generate images are saved with that image
-     - in PNG chunks for PNG, in EXIF for JPEG
-     - can drag the image to PNG info tab to restore generation parameters and automatically copy them into UI
-     - can be disabled in settings
+- Generation parameters added as text to PNG
+- Tab to view an existing picture's generation parameters
 - Settings page
-- Running arbitrary python code from UI (must run with commandline flag to enable)
+- Running custom code from UI
 - Mouseover hints for most UI elements
 - Possible to change defaults/mix/max/step values for UI elements via text config
 - Random artist button
-- Tiling support, a checkbox to create images that can be tiled like textures
+- Tiling support: UI checkbox to create images that can be tiled like textures
 - Progress bar and live image generation preview
-- Negative prompt, an extra text field that allows you to list what you don't want to see in generated image
-- Styles, a way to save part of prompt and easily apply them via dropdown later
-- Variations, a way to generate same image but with tiny differences
-- Seed resizing, a way to generate same image but at slightly different resolution
-- CLIP interrogator, a button that tries to guess prompt from an image
-- Prompt Editing, a way to change prompt mid-generation, say to start making a watermelon and switch to anime girl midway
-- Batch Processing, process a group of files using img2img
+- Negative prompt
+- Styles
+- Variations
+- Seed resizing
+- CLIP interrogator
+- Prompt Editing
+- Batch Processing
 - Img2img Alternative
-- Highres Fix, a convenience option to produce high resolution pictures in one click without usual distortions
-- Reloading checkpoints on the fly
-- Checkpoint Merger, a tab that allows you to merge two checkpoints into one
-- [Custom scripts](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Scripts) with many extensions from community
+- Highres Fix
+- LDSR Upscaling
 
 ## Installation and Running
 Make sure the required [dependencies](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Dependencies) are met and follow the instructions available for both [NVidia](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs) (recommended) and [AMD](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) GPUs.
@@ -96,9 +82,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusio
 ### Installation on Apple Silicon
 
 Find the instructions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon).
-
-## Contributing
-Here's how to add code to this repo: [Contributing](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Contributing)
 
 ## Documentation
 The documentation was moved from this README over to the project's [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki).
