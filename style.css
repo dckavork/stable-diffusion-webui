@@ -47,7 +47,7 @@
 .performance .vram {
 }
 
-#generate{
+#txt2img_generate, #img2img_generate {
     min-height: 4.5em;
 }
 
